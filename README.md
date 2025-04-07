@@ -59,3 +59,5 @@
 ## 참고문헌
 1. 이상웅. "허프변환과 YOLO 기반의 골프공 궤적 추적." 한국차세대컴퓨팅학회 논문지 17.2 (2021): 42-52.
 2. 이홍로, and 황치정. "화소 및 이동 정보를 이용한 골프 스윙 궤도 추적 알고리즘." 정보처리학회논문지 B 12.5 (2005): 561-566.
+3. Zhang, Xiaohan. Golf Ball Detection and Tracking Based on Convolutional Neural Networks. Diss. University of Kansas, 2020.
+4. Zhang, Tianxiao, et al. "Efficient golf ball detection and tracking based on convolutional neural networks and kalman filter." arXiv preprint arXiv:2012.09393 (2020).
