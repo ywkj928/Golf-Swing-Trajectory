@@ -47,7 +47,7 @@
 
 - **측면**:
  <div align="center">
-    <img src="images/측면.jpg" width="450" height="300">
+    <img src="images/측면.jpg" width="400" height="300">
 </div>
 
 ## 결론
