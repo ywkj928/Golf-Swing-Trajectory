@@ -11,55 +11,22 @@
 ## 본론
 
 ### 1. 이론적 배경
-1. **얼굴 인식 기술**: 생체 인식의 일종으로, 개인의 얼굴을 분석하여 신원을 확인하는 기술입니다.
-2. **스푸핑 공격**: 얼굴 인식 시스템의 취약점을 이용하여 신원을 위조하는 행위로, 사진, 동영상 또는 3D 마스크를 통해 이루어집니다.
-3. **Anti-Spoofing 기술**: 스푸핑 공격을 방지하기 위한 기술로, 얼굴 인식 시스템의 보안을 강화하는 데 필수적입니다.
+
 
 ### 2. 구현 방법
-1. **DeepFace.py**
-   - 얼굴 인식 및 진짜/가짜 얼굴 판별
-   - ResNet50 모델 로드 및 이진 분류를 위한 수정
-   - OpenCV를 통한 실시간 비디오 캡쳐 및 사진 저장 기능
 
-2. **ArcFace.py**
-   - ArcFace 모델을 이용한 얼굴 인식
-   - 미리 훈련된 가중치 다운로드 및 로드
-
-3. **FasNet.py**
-   - MiniFASNet 모델을 사용한 얼굴 안티 스푸핑
-   - 이미지 전처리 및 얼굴 분석
-
-4. **Yolo.py**
-   - Yolo 모델을 이용한 얼굴 탐지
-   - 모델 가중치 다운로드 및 로드
      
-<div align="center">
-    <img src="images/Model.jpg" alt="Real Face">
-</div>
 
 ## 구현 결과
-3D 입체 영상을 활용하여 사람과 인형을 구분하는 실험을 진행한 결과, 진짜와 가짜를 효과적으로 구분할 수 있음을 확인하였습니다. 반면, 2D 이미지 비교에서는 오검출이 발생하였습니다. 2D 영상에서의 신뢰도 높은 구분에는 한계가 있음을 알게 되었습니다.
+
 
 ### 결과 이미지
 - **실제 얼굴**:
-<div align="center">
-    <img src="images/Real%20Face.jpg" width="450" height="300">
-</div>
-
-- **가짜 얼굴**:
-<div align="center">
-    <img src="images/Fake%20Face.jpg" width="450" height="300">
-</div>
-<div align="center">
-    <img src="images/FakeFace.jpg" width="450" height="300">
-</div>
 
 ## 결론
-검증에 사용한 이미지와 비디오는 웹캠과 AI 생성 이미지를 활용하였습니다. 구현 결과에서 실제 인물은 진짜로 인식되었고, AI 생성 이미지와 인형은 가짜로 인식되었습니다. 그러나 실시간 영상에서 품질과 환경변수에 따라 오검출이 발생하는 문제도 있었습니다. 이를 해결하기 위해 전처리 과정과 필터링을 통한 이미지 개선 및 AI 생성 이미지의 패턴 학습을 고려하고 있습니다.
+검증은 직접 촬영한 비디오는 촬영한 비디오를 사용하여 검증하였습니다. 구현결과에서 볼 수 있듯이 손과 골프채의 헤드 부분이 탐지되어 일정한 궤도를 출력하였습니다. 하지만 실시간 영상에서 품질 저하와 환경변수로 인해 오검출이 발생하였으며, 일부 노이즈가 제거되지 않아 오검출 확률이 높아지는 것을 확인하였습니다. 추가적으로전처리 과정과 필터링을 개선하는 것이 필요하다는 점을 인식했습니다. 또한, 탐지를 위한 추가적인 데이터의 필요성이 나타났습니다. 이번 과제를 통해 저희는 객체 탐지, 추적 예측 모델, 후처리를 위한 필터 제작 코드를 구현하였으며, 이를 기반으로 ML/AI 영상 기반 소프트웨어를 개발하였습니다.
+
 
 ## 참고문헌
-1. Taigman, Y., Yang, M., Ranzato, M., & Wolf, L. (2014). Closing the gap to human-level performance in face verification. *Proceedings of the IEEE Computer Vision and Pattern Recognition (CVPR)*.
-2. Wang, M., & Deng, W. (2021). Deep face recognition: A survey. *Neurocomputing, 429*, 215-244.
-3. Serengil, deepface 2024. A Benchmark of Facial Recognition Pipelines and Co-Usability Performances of Modules.
-4. 아비라미 비나 (2024, 06.21). AI 얼굴 인식 애플리케이션.
-
+이상웅. "허프변환과 YOLO 기반의 골프공 궤적 추적." 한국차세대컴퓨팅학회 논문지 17.2 (2021): 42-52.
+이홍로, and 황치정. "화소 및 이동 정보를 이용한 골프 스윙 궤도 추적 알고리즘." 정보처리학회논문지 B 12.5 (2005): 561-566.
