@@ -18,8 +18,7 @@ Golf head 인식 및 궤도 그리기
 3. Filter 호출 및 tray 호출
 4. Golf head가 지나간 궤적을 그리기
 
-## Object_Tracking.py
-YOLO 모델을 이용한 Golf head 탐지 및 Bytracker를 이용한 추적
+## Object_Tracking.py (YOLO 모델을 이용한 Golf head 탐지 및 Bytracker를 이용한 추적)
 1. 미리 훈련된 가중치 다운로드 및 로드 
 2. YOLO fine-tuning
 3. Bytracker 라이브러리를 활용한 Tracking 구현 
