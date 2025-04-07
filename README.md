@@ -11,7 +11,28 @@
 
 
 ### 2. 구현 방법
+1. **Main.py**
+Golf head 인식 및 궤도 그리기
+1. OpenCV를 이용한 영상 호출
+2. Object_Tracking 호출
+3. Filter 호출 및 tray 호출
+4. Golf head가 지나간 궤적을 그리기
 
+2. **Object_Tracking.py**
+YOLO 모델을 이용한 Golf head 탐지 및 Bytracker를 이용한 추적
+1. 미리 훈련된 가중치 다운로드 및 로드 
+2. YOLO fine-tuning
+3. Bytracker 라이브러리를 활용한 Tracking 구현 
+
+3. **Filter.py**
+Particle, Kalman 필터를 사용한 영상 노이즈 제거 및 거리, 속도 측정
+1. 이미지 후처리 
+2. 주어진 영상에서 Golf head 거리 및 속도를 예측
+
+4. **Tray.py**
+LSTM 모델을 이용한 궤적 예측 
+1. YOLO 모델을 이용한 좌표를 입력 및 훈련
+2. 훈련된 모델을 이용한 궤적 예측 및 위치 추적
      
 
 ## 구현 결과
