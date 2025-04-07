@@ -19,7 +19,10 @@
 
 ### 결과 이미지
 - **정면**:
-  
+  <div align="center">
+    <img src="images/정면.jpg" width="450" height="300">
+</div>
+
 - **측면**:
 
 ## 결론
