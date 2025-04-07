@@ -41,9 +41,10 @@
 
 ### 결과 이미지
 - **정면**:
-  <div align="center">
-    <img src="images/정면.jpg" width="450" height="300">
+ <div align="center">
+    <img src="images/정면.jpg" style="max-width: 100%; height: auto; width: 450px; height: 300px;">
 </div>
+
 
 - **측면**:
  <div align="center">
