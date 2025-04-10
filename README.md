@@ -61,15 +61,11 @@ LSTM(Long Short-Term Memory) 모델은 시계열 데이터의 패턴을 학습�
 
 ### 결과 이미지
 - **정면**:
- <div align="center">
-    <img src="images/정면.jpg" style="max-width: 100%; height: auto; width: 400px; height: 280px;">
-</div>
+
 
 
 - **측면**:
-<div align="center">
-    <img src="images/측면.jpg" style="max-width: 100%; height: auto; width: 400px; height: 280px;">
-</div>
+
 
 
 ## 결론
