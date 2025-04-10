@@ -23,6 +23,7 @@ Particle Filter는 비선형 및 비가우시안 시스템에서 상태를 추�
 6. 궤적 예측 LSTM(Long Short-Term Memory) 모델은 시계열 데이터의 패턴을 학습하는 데 적합한 순환 신경망(RNN) 구조입니다. 본 프로젝트에서는 LSTM을 사용하여 골프 헤드의 궤적을 예측합니다. LSTM은 과거의 정보를 기억하고 이를 기반으로 미래의 상태를 예측하는 데 강력한 성능을 보입니다.
 
 ### 2. 구현 방법
+사용 기술: Python (v3.9.21), Pandas, Numpy, TensorFlow, Keras, OpenCV, Ultralytics(Yolov11), Pillow, Bytrack
 1. **Main.py**  
    Golf head 인식 및 궤도 그리기
    - OpenCV를 이용한 영상 호출
